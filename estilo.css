@@ -63,8 +63,13 @@
 .contacto > .imagen{
     margin: 2%;
     padding: 1%;
+    height: 30em;
     background-image: url(../Portafolio/img/IMG_20190603_123220.jpg);
     background-size: 100% 100%;
+}
+
+.contacto > .redes{
+    margin-top: 90%;
 }
 
 .contacto > .redes > .boton{
@@ -72,7 +77,7 @@
     padding: 3%;
     display: block;
     border-radius: 1em;
-    background-color: sandybrown;
+    background-color:purple;
     text-decoration: none;
     color: white;
     text-align: center;
@@ -84,11 +89,32 @@
     grid-column: 2/5;
 }
 
-.contenido > h1{
+.contenido > section{
+    display: flex;
+}
+
+.contenido > section > h1{
     margin-top: inherit;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: xxx-large;
     color: #521051;
+}
+
+div.animacionup{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: tomato;
+    animation-name: animaUp;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animaUp{
+    25% {background-color: tomato; transform: translate(40px);}
+    50% {background-color: yellowgreen; transform: translate(80px);}
+    75% {background-color: goldenrod; transform: translate(160px);}
+    100% {background-color: blue; transform: translate(320px);}
 }
 
 .contenido > h5{
@@ -109,5 +135,32 @@
 
 .contenedor > .footer{
     grid-column: 1/5;
-    border: solid blue;
+    text-align: center;
+    background-color: #521051;
+    color: white;
 }
+
+.footer > div {
+    display: inline-flex;
+}
+
+.footer> div >.animacion{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    animation-name: coder;
+    animation-duration: .8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes coder{
+    form{
+        transform: scale(0.2);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
