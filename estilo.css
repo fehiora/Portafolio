@@ -1,3 +1,13 @@
+@font-face{
+    font-family: primerafuente;
+    src: url(../Portafolio/fonts/Jambo.otf);
+}
+
+@font-face{
+    font-family: segundafuente;
+    src: url(./fonts/Longa.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -18,10 +28,13 @@
     padding: 10%;
     justify-content: center;
     grid-column: 1/2;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: primerafuente;
     font-size: xxx-large;
     color: #521051;
-    transform: rotate(-10deg);}
+    }
+
+
+
 
 .contenedor > .encabezado{
     grid-column: 2/5;
@@ -45,12 +58,12 @@
 }
 
 .navegador > ul li a:hover{
-    background-color: sandybrown;
+    background-color: tomato;
 }
 
 .contenedor > .contacto{
     grid-column: 1/2;
-    background-color: rgba(128, 0, 128, 0.26);
+    background-color: #521051;
     color: white;
 }
 
@@ -77,7 +90,7 @@
     padding: 3%;
     display: block;
     border-radius: 1em;
-    background-color:purple;
+    background-color: tomato;
     text-decoration: none;
     color: white;
     text-align: center;
@@ -95,7 +108,7 @@
 
 .contenido > section > h1{
     margin-top: inherit;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: primerafuente;
     font-size: xxx-large;
     color: #521051;
 }
@@ -114,23 +127,47 @@ div.animacionup{
     25% {background-color: tomato; transform: translate(40px);}
     50% {background-color: yellowgreen; transform: translate(80px);}
     75% {background-color: goldenrod; transform: translate(160px);}
-    100% {background-color: blue; transform: translate(320px);}
+    100% {background-color: blueviolet; transform: translate(320px);}
 }
 
-.contenido > h5{
-    margin-top: inherit;
+.contenido > h5, .redes > h5{
+    margin-top: 10%;
     padding-top: 1%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: xx-large;
-    color: #521051;
+    font-family: segundafuente;
+    font-size: xxx-large;
+    color: tomato;
+    text-align: center;
 }
 
 .contenido > div > h6{
     margin-top: 2%;
     padding-top: 1%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: large;
-    color: #521051
+    font-family: segundafuente;
+    font-size: xxx-large;
+    color: tomato;
+}
+
+
+.contenido > div >p {
+    margin: 2%;
+    padding: 3%;
+    text-align: justify;
+    font-family: segundafuente;
+    font-size: x-large;
+}
+
+
+.contenido > .boton2 a{
+    margin-top: 4%;
+    margin-left: 40%;
+    padding: 1%;
+    display: block;
+    border-radius: 1em;
+    background-color: #521051;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 4em;
 }
 
 .contenedor > .footer{
@@ -164,3 +201,56 @@ div.animacionup{
     }
 }
 
+
+/* Estilo iconos */
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?rswurl');
+    src:  url('fonts/icomoon.eot?rswurl#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?rswurl') format('truetype'),
+      url('fonts/icomoon.woff?rswurl') format('woff'),
+      url('fonts/icomoon.svg?rswurl#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-instagram:before {
+    content: "\e903";
+  }
+  .icon-whatsapp .path1:before {
+    content: "\e900";
+    color: rgb(44, 183, 66);
+  }
+  .icon-whatsapp .path2:before {
+    content: "\e901";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-whatsapp .path3:before {
+    content: "\e902";
+    margin-left: -1em;
+    color: rgb(44, 183, 66);
+  }
+  .icon-twitter:before {
+    content: "\e904";
+    color: #4aa0ec;
+    font-size: 1.5em;
+  }
+  
