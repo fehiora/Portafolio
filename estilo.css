@@ -154,6 +154,7 @@
 
     .myCoolButton {
         background: #85144b;
+        color: white;
     }
     
     .contenedor > .footer{
@@ -197,8 +198,13 @@
     .contenedor > .encabezado{
         grid-column: 2/5;
         background-color: purple;
-    }
+     }
+
+     .menu{
+         position: relative;
+     }
     
+    /* css anterior nav
     .navegador > ul{
         margin: 1%;
         list-style: none;
@@ -218,7 +224,8 @@
     .navegador > ul li a:hover{
         background-color: tomato;
     }
-    
+    */
+
     .contenedor > .contacto{
         grid-column: 1/2;
         background-color: #521051;
@@ -324,7 +331,7 @@
         background: #85144b;
     }
 
-    a {
+    .color {
         color: white;
     }
     

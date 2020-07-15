@@ -15,7 +15,7 @@
         <div class="titulo">
             <p>mafehior.CV</p>
         </div>
-        <header class="encabezado" id="arriba">
+        <!--header class="encabezado" id="arriba">
             <nav class="navegador">
                 <ul>
                     <li><a href="#info1" id="inf1">Acerca de mi</a></li>
@@ -25,6 +25,24 @@
                     <li><a href="#info5" id="inf5">Portafolio</a></li>
                 </ul>
             </nav>
+        </header-->
+
+        <!--Nav del framework-->
+        <header class="encabezado" id="arriba">
+        <div class=style="overflow: hidden;height: 250px;">
+
+            <nav>
+
+              <div class="menu">
+                <a href="#info1" class="pseudo button">Acerca de mi</a>
+                <a href="#info2" class="pseudo button">habilidades</a>
+                <a href="#info3" class="pseudo button">Servicios</a>
+                <a href="#info4" class="pseudo button">Experiencia</a>
+                <a href="#info5" class="pseudo button">Portafolio</a>
+
+              </div>
+            </nav>
+            </div>
         </header>
 
         <div class="contacto">
@@ -89,9 +107,30 @@
 
             <div id="info5">
                 <h6>Portafolio</h6>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus accusamus iste in accusantium, incidunt expedita assumenda ratione excepturi placeat, odio officiis, necessitatibus eligendi quibusdam quam. Doloremque, repellendus dolorem. Earum.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus accusamus iste in accusantium, incidunt expedita assumenda ratione excepturi placeat, odio officiis, necessitatibus eligendi quibusdam quam. Doloremque, repellendus dolorem. Earum.
-                     </p>
+
+                <div class="flex two">
+                    <div>
+                      <article class="card">
+                        <img src="/img/icons8-twitter-48.png">
+                        <footer>
+                          <h3>Reto visual</h3>
+                          <button>Me gusta</button>
+                        </footer>
+                      </article>
+                    </div>
+                    <div>
+                        <article class="card">
+                          <img src="/img/emociones.jpg">
+                          <footer>
+                            <h3>Emocion</h3>
+                            <button>Me gusta</button>
+                          </footer>
+                        </article>
+                      </div>
+                    </div>
+
+
+
                 </div>
 
             <!--<div class="boton2">
@@ -99,9 +138,9 @@
             </div>-->
             
             <!--Boton del Framwork-->
-            
+
             <button class="myCoolButton">
-            <a href="#arriba" id="arriba">Arriba</a>
+            <a href="#arriba" id="arriba" class="color">Arriba</a>
             </button>
 
         </main>
