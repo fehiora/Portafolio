@@ -200,8 +200,8 @@
         background-color: purple;
      }
 
-     .menu{
-         position: relative;
+     .mimenu{
+        position: relative !important; 
      }
     
     /* css anterior nav
@@ -347,12 +347,6 @@
     }
 
 }
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
 
 
 div.animacionup{
