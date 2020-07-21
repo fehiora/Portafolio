@@ -201,7 +201,8 @@
      }
 
      .mimenu{
-        position: relative !important; 
+        position: relative !important;
+        top: 5.4em; 
      }
     
     /* css anterior nav
@@ -310,6 +311,13 @@
         font-family: sans-serif;
         font-size: medium;
     }
+
+    .iconos{
+        margin-top: 1%;
+        padding: 0% 30% 0% 30%;
+        justify-content: center;
+        font-size: xx-large;
+    }
     
     
    /* .contenido > .boton2 a{
@@ -329,6 +337,7 @@
 
      .myCoolButton  {
         background: #85144b;
+        margin-left: 50%;
     }
 
     .color {
